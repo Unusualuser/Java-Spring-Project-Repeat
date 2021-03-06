@@ -1,7 +1,7 @@
 package org.example;
 
 public class MusicPlayer {
-    private Music music;
+    private final Music music;
 
     //IoC
     public MusicPlayer(Music music) {
