@@ -9,11 +9,13 @@
 
     <context:property-placeholder location="musicPlayer.properties"/>
 
+    <bean id="classicalMusicBean"
+          class="org.example.ClassicalMusic"
+            init-method="doMyInit"
+            destroy-method="doMyDestroy">
+    </bean>
     <bean id="rockMusicBean"
           class="org.example.RockMusic">
-    </bean>
-    <bean id="classicalMusicBean"
-          class="org.example.ClassicalMusic">
     </bean>
     <bean id="hipHopMusicBean"
           class="org.example.HipHopMusic">
