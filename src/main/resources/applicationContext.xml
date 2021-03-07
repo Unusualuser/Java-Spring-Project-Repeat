@@ -11,8 +11,9 @@
 
     <bean id="classicalMusicBean"
           class="org.example.ClassicalMusic"
-            init-method="doMyInit"
-            destroy-method="doMyDestroy">
+          scope="prototype"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy">
     </bean>
     <bean id="rockMusicBean"
           class="org.example.RockMusic">
