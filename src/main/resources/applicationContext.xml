@@ -13,7 +13,8 @@
           class="org.example.ClassicalMusic"
           scope="prototype"
           init-method="doMyInit"
-          destroy-method="doMyDestroy">
+          destroy-method="doMyDestroy"
+          factory-method="getClassicalMusic">
     </bean>
     <bean id="rockMusicBean"
           class="org.example.RockMusic">
