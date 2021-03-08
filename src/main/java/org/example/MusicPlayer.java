@@ -2,16 +2,17 @@ package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
-import java.util.Random;
 
 @Component
 public class MusicPlayer {
     private Music music1;
     private Music music2;
     private Music music3;
+    @Value("${musicPlayer.name}")
     private String name;
+    @Value("${musicPlayer.volume}")
     private int volume;
 
     //IoC
@@ -22,8 +23,6 @@ public class MusicPlayer {
         this.music1 = music1;
         this.music2 = music2;
         this.music3 = music3;
-        this.name = "Ipod";
-        this.volume = 100;
     }
 
     public MusicPlayer() { }
