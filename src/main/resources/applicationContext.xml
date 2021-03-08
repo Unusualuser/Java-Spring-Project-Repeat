@@ -10,18 +10,4 @@
     <context:property-placeholder location="musicPlayer.properties"/>
     <context:component-scan base-package="org.example"/>
 
-    <bean id="musicPlayer"
-          class="org.example.MusicPlayer"
-          scope="prototype">
-        <property name="musicList">
-            <list>
-                <ref bean="rockMusic"/>
-                <ref bean="classicalMusic"/>
-                <ref bean="hipHopMusic"/>
-            </list>
-        </property>
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
-
 </beans>
