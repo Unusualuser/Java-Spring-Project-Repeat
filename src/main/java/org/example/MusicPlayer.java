@@ -19,7 +19,6 @@ public class MusicPlayer {
     public MusicPlayer(@Qualifier("hipHopMusic") Music music1,
                        @Qualifier("classicalMusic") Music music2,
                        @Qualifier("rockMusic") Music music3) {
-        System.out.println("constructor");
         this.music1 = music1;
         this.music2 = music2;
         this.music3 = music3;
