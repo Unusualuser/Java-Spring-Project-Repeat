@@ -15,7 +15,6 @@ public class MusicPlayer {
     @Value("${musicPlayer.volume}")
     private int volume;
 
-    //IoC
     @Autowired
     public MusicPlayer(@Qualifier("hipHopMusic") Music music1,
                        @Qualifier("classicalMusic") Music music2,
